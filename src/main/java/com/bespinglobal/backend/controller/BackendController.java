@@ -1,9 +1,9 @@
 /**
- * Project: Appbricks
+ * Project: SKT MarketPlace
  *
- * <p>Copyright (c) 2021 CNE
+ * <p>Copyright (c) 2021 Bespinglobal
  *
- * <p>This software is saga manager
+ * <p>This software is STK MP Launcher
  */
 package com.bespinglobal.backend.controller;
 
@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  *
  * <pre>
  * service           : backend
- * package           : com.bespinglobal.backend.backend.controller
+ * package           : com.bespinglobal.backend.controller
  * class             : BackendController
  * description       :
  *
