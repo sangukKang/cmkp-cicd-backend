@@ -7,4 +7,4 @@ echo "--path--"
 pwd
 ls
 
-java -jar backend-0.0.1-SNAPSHOT.war
+nohup java -Xms1024m -Xmx2048m -jar backend-0.0.1-SNAPSHOT.war  </dev/null &>/dev/null &
