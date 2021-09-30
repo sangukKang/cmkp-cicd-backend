@@ -31,6 +31,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * @version 1.0.0
  */
 @Controller
+@RequestMapping("/api")
 public class BackendController {
 
   static final String API_V1 = "/backend";
