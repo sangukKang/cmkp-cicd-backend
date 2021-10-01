@@ -13,6 +13,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  *
  *
@@ -34,10 +37,19 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping("/api")
 public class BackendController {
 
-  static final String API_V1 = "/backend";
+  static final String API_V1 = "/v1";
 
-  @RequestMapping(value = API_V1, method = RequestMethod.POST)
+  @RequestMapping(value = API_V1 + "/backend", method = RequestMethod.POST)
   public ResponseEntity<Void> apply() {
     return new ResponseEntity(HttpStatus.CREATED);
+  }
+
+  @RequestMapping(value = API_V1 + "/sample", method = RequestMethod.POST)
+  public ResponseEntity sample() {
+    Map<String, String> mockup = new HashMap<>();
+    mockup.put("userId", "P0001");
+    mockup.put("userName", "admin");
+    mockup.put("project", "skt");
+    return new ResponseEntity(mockup, HttpStatus.OK);
   }
 }
